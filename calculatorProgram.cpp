@@ -6,16 +6,16 @@
 using namespace std;
 
 int main(){
-    double NumA , NumB; //number a and b
+    double NUMBER_A , NUMBER_B; //number a and b
     int choice; // your choice
     double Answer; // the answer
-    string again; // answer for loop
+    string CLIENT_ANSWER; // answer for loop
     cout << "this is a caculator program using c++" << endl;
     do {
         cout << "enter number a: ";
-        cin >> NumA;
+        cin >> NUMBER_A;
         cout << "enter number b: ";
-        cin >> NumB;
+        cin >> NUMBER_B;
         cout << "choose your calculator soluntion: " << endl;
         cout << "1.+" << endl;
         cout << "2.-" << endl;
@@ -24,25 +24,25 @@ int main(){
         cin >> choice;
         switch (choice){
             case 1:
-                Answer = NumA + NumB;
+                Answer = NUMBER_A + NUMBER_B;
                 cout << "the answer is: " << Answer << endl;
                 break;
             case 2:
-                Answer = NumA - NumB;
+                Answer = NUMBER_A - NUMBER_B;
                 cout << "the answer is: " << Answer << endl;
                 break;
             case 3:
-                Answer = NumA * NumB;
+                Answer = NUMBER_A * NUMBER_B;
                 cout << "the answer is: " << Answer << endl;
                 break;
             case 4: 
-                Answer = NumA / NumB;
+                Answer = NUMBER_A / NUMBER_B;
                 cout << fixed << setprecision(16) << "the answer is: " << Answer << endl;
                 break;
         }
         cout << "try another one?: "; // ask the client for loop
-        cin >> again; // your answer
+        cin >> CLIENT_ANSWER; // your answer
         system("clr || clear"); // clear console
-    } while(again == "Yes" || again == "yes");
+    } while(CLIENT_ANSWER == "Yes" || CLIENT_ANSWER == "yes");
     return 0;
 }
